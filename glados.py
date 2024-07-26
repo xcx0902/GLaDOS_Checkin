@@ -29,7 +29,7 @@ if __name__ == '__main__':
         try:
             time = time.split('.')[0]
         except:
-            pass
+            time = str(time)
         email = state.json()['data']['email']
         if 'message' in checkin.text:
             mess = checkin.json()['message']
